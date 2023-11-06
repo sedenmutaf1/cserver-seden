@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s;
+    background-color: #FF0000; /* Initial background color */
+}
+
+.container {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+
+
+a {
+    display: block;
+}
+
+#animated-image {
+    width: 1300px; /* Set the initial width of the image */
+    animation: growAndShrink 0.41s ease-in-out infinite; /* Apply the animation */
+}
+#animated-image:hover {
+     /* Enlarge the image on hover */
+    content: url("./Files/hover-image.png"); /* Change the image on hover */
+}
+
+@keyframes growAndShrink {
+    0% {
+        transform: scale(1); /* Start with the original size */
+    }
+    50% {
+        transform: scale(1.2); /* Grow to 120% of the original size */
+    }
+    100% {
+        transform: scale(1); /* Return to the original size */
+    }
+}
+
