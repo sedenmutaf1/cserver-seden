@@ -1,4 +1,8 @@
-# Web Server README
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+</div>
+
+# Web Server 
 
 ## Introduction
 
@@ -12,8 +16,8 @@ The purpose of this software is to demonstrate how a basic web server works and 
 
 To use the web server, follow these steps:
 
-1. Compile the source code:g++ web_server.cpp -o web_server
-2. Run the web server:./web_server
+1. Compile the source code:g++ server.cpp -o server
+2. Run the web server:./server
 3. Access the server in your web browser:
 - Open your web browser.
 - Navigate to http://localhost:8080/index.html (or the port you specified in the code).
